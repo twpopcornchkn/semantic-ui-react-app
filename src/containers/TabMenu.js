@@ -1,37 +1,41 @@
 import React, { Component } from 'react'
 import { Grid, Menu, Segment, Icon } from 'semantic-ui-react'
-import { withRouter } from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 import BreadCrumb from '../components/breadCrumb';
 
 
 
 class SuiMenu extends Component {
-  render() {
-    return (
+  state = { activeItem: 'bio' }
 
+  handleItemClick = (e, { name }) => {
+    this.setState({ activeItem: name });
+    this.props.history.push(name);
+  }
+
+  render() {
+    const { activeItem } = this.state
+
+    return (
       <Grid className="tabMenu">
-        <Grid.Column>
-          <div className="ui visible left vertical sidebar menu">
-            <a href="/" className="item">
-              <i className="gamepad icon"></i>
-              Real-Time
-            </a>
-            <a href="/acquisition" className="item">
-              <i className="handshake outline icon"></i>
-              Acquisition
-            </a>
-            <a href="/retention" className="item">
-              <i className="retweet icon"></i>
-              Retention
-            </a>
-            <a href="/behaviour" className="item">
-              <i className="cogs icon"></i>
-              Behaviour
-            </a>
-          </div>
+        <Grid.Column width={4}>
+          <Menu tabular vertical fluid>
+            <Menu.Item name='realTime' active={activeItem === 'realTime'} onClick={this.handleItemClick}>
+              <Icon name='gamepad' floated='left' /> Real-Time
+            </Menu.Item>
+            <Menu.Item name='acquisition' active={activeItem === 'acquisition'} onClick={this.handleItemClick}>
+              <Icon name='handshake outline' floated='left' /> Acquisition
+            </Menu.Item>
+            <Menu.Item name='retention' active={activeItem === 'retention'} onClick={this.handleItemClick}>
+              <Icon name='retweet'/> Retention
+            </Menu.Item>
+            <Menu.Item name='behaviour' active={activeItem === 'behaviour'} onClick={this.handleItemClick}>
+              <Icon name='cogs'/> Behaviour
+            </Menu.Item>
+          </Menu>
         </Grid.Column>
 
-        <Grid.Column stretched width={14} className="pusher">
+        <Grid.Column stretched width={12}>
           <Segment>
             <BreadCrumb />
             {this.props.children}
@@ -43,6 +47,3 @@ class SuiMenu extends Component {
 }
 
 export default withRouter(SuiMenu);
-
-
-
