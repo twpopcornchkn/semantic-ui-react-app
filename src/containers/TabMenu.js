@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Grid, Menu, Segment, Icon } from 'semantic-ui-react'
 import {withRouter} from 'react-router-dom';
-import BreadCrumb from '../components/breadCrumb';
+import BreadCrumb from '../components/layout/breadCrumb';
 
 
 

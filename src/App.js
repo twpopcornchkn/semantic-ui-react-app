@@ -5,11 +5,11 @@ import TabMenu from './containers/TabMenu';
 import SideBar from './containers/sideBar';
 import Home from './containers/Home';
 
-import HeaderMenu from './components/headerMenu';
-import AboutUs from './components/aboutUs';
-import Jobs from './components/jobs';
-import CheatSheet from './components/cheatSheet';
-import Footer from './components/footer';
+import HeaderMenu from './components/layout/headerMenu';
+import AboutUs from './components/pages/aboutUs';
+import Jobs from './components/pages/jobs';
+import CheatSheet from './components/pages/cheatSheet';
+import Footer from './components/layout/footer';
 import RealTime from './components/pages/realTime';
 import Acquisition from './components/pages/acquisition';
 import Behaviour from './components/pages/behaviour';
@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="main">
       <HeaderMenu/>
-      <div class="contentHolder">
+      <div className="contentHolder">
         <TabMenu>
           <Switch>
                   <Route exact path="/" component={Home} />

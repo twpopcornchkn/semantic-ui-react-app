@@ -46,7 +46,7 @@ const userRating = (props) => (
             </tr>
         </tbody>
         <tfoot>
-            <tr><th colspan="5">
+            <tr><th colSpan="5">
                 <div className="ui right floated pagination menu">
                     <a className="icon item">
                         <i className="left chevron icon"></i>

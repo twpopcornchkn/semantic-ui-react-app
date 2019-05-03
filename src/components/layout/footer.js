@@ -37,7 +37,7 @@ const footer = (props) =>(
         </div>
       </div>
       <div className="ui inverted section divider"></div>
-      <i class="globe icon"></i>
+      <i className="globe icon"></i>
       <div className="ui horizontal inverted small divided link list">
         <a className="item" href="#">Site Map</a>
         <a className="item" href="#">Contact Us</a>
