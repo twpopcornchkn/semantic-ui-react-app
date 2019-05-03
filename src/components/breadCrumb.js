@@ -20,6 +20,7 @@ const breadCrumb = (props) =>{
   <div className="divider"> / </div>
   <div className="active section">{unCamelCase(props.location.pathname.replace("/", ""))}</div>
 </div>
+<br/><br/>
 </div>  
 );
 
