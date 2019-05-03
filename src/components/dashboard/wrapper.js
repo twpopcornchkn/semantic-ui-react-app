@@ -1,8 +1,9 @@
 import React from 'react';
 
 const wrapper = (props) =>(
-
-<div></div>
+<div className="wrapper">
+  {props.children}
+</div>
 );
 
 export default wrapper;
