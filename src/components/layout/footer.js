@@ -5,35 +5,28 @@ const footer = (props) =>(
     <div className="ui center aligned container">
       <div className="ui stackable inverted divided grid">
         <div className="three wide column">
-          <h4 className="ui inverted header">Group 1</h4>
+          <h4 className="ui inverted header">Learning & Support</h4>
           <div className="ui inverted link list">
-            <a href="#" className="item">Link One</a>
-            <a href="#" className="item">Link Two</a>
-            <a href="#" className="item">Link Three</a>
-            <a href="#" className="item">Link Four</a>
+            <a href="#" className="item">Help Center</a>
+            <a href="#" className="item">Printer</a>
           </div>
         </div>
         <div className="three wide column">
-          <h4 className="ui inverted header">Group 2</h4>
+          <h4 className="ui inverted header">Developers</h4>
           <div className="ui inverted link list">
-            <a href="#" className="item">Link One</a>
-            <a href="#" className="item">Link Two</a>
-            <a href="#" className="item">Link Three</a>
-            <a href="#" className="item">Link Four</a>
+            <a href="#" className="item">Developers Site</a>
           </div>
         </div>
         <div className="three wide column">
-          <h4 className="ui inverted header">Group 3</h4>
+          <h4 className="ui inverted header">Related Products</h4>
           <div className="ui inverted link list">
-            <a href="#" className="item">Link One</a>
-            <a href="#" className="item">Link Two</a>
-            <a href="#" className="item">Link Three</a>
-            <a href="#" className="item">Link Four</a>
+            <a href="#" className="item">Business View</a>
+            <a href="#" className="item">Business Solutions Directory</a>
           </div>
         </div>
         <div className="seven wide column">
-          <h4 className="ui inverted header">Footer Header</h4>
-          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+          <h4 className="ui inverted header">Company</h4>
+          <p>Thanks for using our products and services (“Services”). The Services are provided by another company.</p>
         </div>
       </div>
       <div className="ui inverted section divider"></div>

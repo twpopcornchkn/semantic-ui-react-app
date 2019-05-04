@@ -32,9 +32,9 @@ const addDoc = (props) =>(
                 <option value="admin">admin</option>
                 
 
-              </select><i className="dropdown icon"></i><input className="search" tabindex="0"/>
+              </select><i className="dropdown icon"></i><input className="search" tabIndex="0"/>
           <div className="default text">Groups</div>
-          <div className="menu" tabindex="-1">
+          <div className="menu" tabIndex="-1">
             <div className="item" data-value="admin">admin</div>
           </div>
         </div>
@@ -46,9 +46,9 @@ const addDoc = (props) =>(
                 <option value="RT8gsgmcePFtHthDw">Bob Smith</option>
                 
 
-              </select><i className="dropdown icon"></i><input className="search" tabindex="0"/>
+              </select><i className="dropdown icon"></i><input className="search" tabIndex="0"/>
           <div className="default text">Staff ID</div>
-          <div className="menu" tabindex="-1">
+          <div className="menu" tabIndex="-1">
             <div className="item" data-value="RT8gsgmcePFtHthDw">131432</div>
           </div>
         </div>

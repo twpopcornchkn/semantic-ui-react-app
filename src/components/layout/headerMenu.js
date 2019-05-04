@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
-import {withRouter} from 'react-router-dom';
+import {withRouter, Link} from 'react-router-dom';
 
 class hMenu extends Component {
   state = {}
@@ -17,15 +17,15 @@ class hMenu extends Component {
   
     <div className="ui attached stackable menu inverted">
     <div className="ui container">
-        <a href="/" className="item">
-        <i className="home icon"></i> Home
-        </a>
-        <a href="/aboutUs" className="item">
-        <i className="grid layout icon"></i> About Us
-        </a>
-        <a href="/jobs" className="item">
-        <i className="mail icon"></i> Jobs
-        </a>
+        <Link to="/" className="item">
+          <i className="home icon"></i> Home
+        </Link>
+        <Link to="/aboutUs" className="item">
+          <i className="grid layout  icon"></i> About Us
+        </Link>
+        <Link to="/jobs" className="item">
+          <i className="mail  icon"></i> Jobs
+        </Link>
         <div className="ui simple dropdown item">
         More
         <i className="dropdown icon"></i>
